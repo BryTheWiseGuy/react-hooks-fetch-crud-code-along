@@ -5,7 +5,7 @@ function ItemForm({ onAddItem }) {
   const [category, setCategory] = useState("Produce");
 
   function handleSubmit(e) {
-    e.preventdefault()
+    e.preventDefault();
     const itemData = {
       name: name,
       category: category,
